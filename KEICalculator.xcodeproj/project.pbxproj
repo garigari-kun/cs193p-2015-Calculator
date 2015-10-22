@@ -97,10 +97,10 @@
 		63DE79CD1BD743670066C5E0 /* KEICalculator */ = {
 			isa = PBXGroup;
 			children = (
+				63DE79FC1BD7A9AA0066C5E0 /* Supporting Files */,
 				63DE79CE1BD743670066C5E0 /* AppDelegate.swift */,
 				63DE79FD1BD7AA3B0066C5E0 /* CalculatorViewController.swift */,
 				63DE79D21BD743670066C5E0 /* Main.storyboard */,
-				63DE79FC1BD7A9AA0066C5E0 /* Supporting Files */,
 			);
 			path = KEICalculator;
 			sourceTree = "<group>";
@@ -108,8 +108,8 @@
 		63DE79E21BD743670066C5E0 /* KEICalculatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				63DE79E31BD743680066C5E0 /* KEICalculatorTests.swift */,
 				63DE79E51BD743680066C5E0 /* Info.plist */,
+				63DE79E31BD743680066C5E0 /* KEICalculatorTests.swift */,
 			);
 			path = KEICalculatorTests;
 			sourceTree = "<group>";
@@ -117,8 +117,8 @@
 		63DE79ED1BD743680066C5E0 /* KEICalculatorUITests */ = {
 			isa = PBXGroup;
 			children = (
-				63DE79EE1BD743680066C5E0 /* KEICalculatorUITests.swift */,
 				63DE79F01BD743680066C5E0 /* Info.plist */,
+				63DE79EE1BD743680066C5E0 /* KEICalculatorUITests.swift */,
 			);
 			path = KEICalculatorUITests;
 			sourceTree = "<group>";
@@ -127,10 +127,10 @@
 			isa = PBXGroup;
 			children = (
 				63DE79D51BD743670066C5E0 /* Assets.xcassets */,
-				63DE79D71BD743670066C5E0 /* LaunchScreen.storyboard */,
 				63DE79DA1BD743670066C5E0 /* Info.plist */,
+				63DE79D71BD743670066C5E0 /* LaunchScreen.storyboard */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +306,7 @@
 				63DE79D31BD743670066C5E0 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		63DE79D71BD743670066C5E0 /* LaunchScreen.storyboard */ = {
@@ -314,6 +315,7 @@
 				63DE79D81BD743670066C5E0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -406,7 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = KEICalculator/Info.plist;
+				INFOPLIST_FILE = "KEICalculator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Keisuke-Tsukamoto.KEICalculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -417,7 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = KEICalculator/Info.plist;
+				INFOPLIST_FILE = "KEICalculator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Keisuke-Tsukamoto.KEICalculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
