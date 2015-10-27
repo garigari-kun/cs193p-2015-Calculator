@@ -13,7 +13,7 @@
 		63DE79D91BD743670066C5E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63DE79D71BD743670066C5E0 /* LaunchScreen.storyboard */; };
 		63DE79E41BD743680066C5E0 /* KEICalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE79E31BD743680066C5E0 /* KEICalculatorTests.swift */; };
 		63DE79EF1BD743680066C5E0 /* KEICalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE79EE1BD743680066C5E0 /* KEICalculatorUITests.swift */; };
-		63DE79FE1BD7AA3B0066C5E0 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE79FD1BD7AA3B0066C5E0 /* CalculatorViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		63DE79FE1BD7AA3B0066C5E0 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE79FD1BD7AA3B0066C5E0 /* CalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +74,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		638FA1341BDBAF2800B57272 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		638FA1351BDBAF3200B57272 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63DE79D21BD743670066C5E0 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		638FA1361BDBAF3700B57272 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63DE79FD1BD7AA3B0066C5E0 /* CalculatorViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		63DE79C21BD743670066C5E0 = {
 			isa = PBXGroup;
 			children = (
@@ -99,8 +122,9 @@
 			children = (
 				63DE79FC1BD7A9AA0066C5E0 /* Supporting Files */,
 				63DE79CE1BD743670066C5E0 /* AppDelegate.swift */,
-				63DE79FD1BD7AA3B0066C5E0 /* CalculatorViewController.swift */,
-				63DE79D21BD743670066C5E0 /* Main.storyboard */,
+				638FA1361BDBAF3700B57272 /* Controller */,
+				638FA1351BDBAF3200B57272 /* View */,
+				638FA1341BDBAF2800B57272 /* Model */,
 			);
 			path = KEICalculator;
 			sourceTree = "<group>";
@@ -200,6 +224,7 @@
 				TargetAttributes = {
 					63DE79CA1BD743670066C5E0 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = V953LYRVTJ;
 					};
 					63DE79DE1BD743670066C5E0 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -408,10 +433,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "KEICalculator/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Keisuke-Tsukamoto.KEICalculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -419,10 +449,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "KEICalculator/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Keisuke-Tsukamoto.KEICalculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
