@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6356E4811BE0272A005F204F /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356E4801BE0272A005F204F /* CalculatorBrain.swift */; };
 		63DE79CF1BD743670066C5E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE79CE1BD743670066C5E0 /* AppDelegate.swift */; };
 		63DE79D41BD743670066C5E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63DE79D21BD743670066C5E0 /* Main.storyboard */; };
 		63DE79D61BD743670066C5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63DE79D51BD743670066C5E0 /* Assets.xcassets */; };
 		63DE79D91BD743670066C5E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63DE79D71BD743670066C5E0 /* LaunchScreen.storyboard */; };
 		63DE79E41BD743680066C5E0 /* KEICalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE79E31BD743680066C5E0 /* KEICalculatorTests.swift */; };
 		63DE79EF1BD743680066C5E0 /* KEICalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE79EE1BD743680066C5E0 /* KEICalculatorUITests.swift */; };
-		63DE79FE1BD7AA3B0066C5E0 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE79FD1BD7AA3B0066C5E0 /* CalculatorViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		63DE79FE1BD7AA3B0066C5E0 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE79FD1BD7AA3B0066C5E0 /* CalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6356E4801BE0272A005F204F /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		63DE79CB1BD743670066C5E0 /* KEICalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KEICalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DE79CE1BD743670066C5E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63DE79D31BD743670066C5E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				63DE79FC1BD7A9AA0066C5E0 /* Supporting Files */,
 				63DE79CE1BD743670066C5E0 /* AppDelegate.swift */,
 				63DE79FD1BD7AA3B0066C5E0 /* CalculatorViewController.swift */,
+				6356E4801BE0272A005F204F /* CalculatorBrain.swift */,
 				63DE79D21BD743670066C5E0 /* Main.storyboard */,
 			);
 			path = KEICalculator;
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6356E4811BE0272A005F204F /* CalculatorBrain.swift in Sources */,
 				63DE79FE1BD7AA3B0066C5E0 /* CalculatorViewController.swift in Sources */,
 				63DE79CF1BD743670066C5E0 /* AppDelegate.swift in Sources */,
 			);

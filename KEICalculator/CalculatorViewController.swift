@@ -14,6 +14,9 @@ class CalculatorViewController: UIViewController
     @IBOutlet weak var displayLabel: UILabel!
     
     var userIsInTheMiddleOfTypingANumber = false
+    
+    // Instance of model
+    var brain = CalculatorBrain()
 
     @IBAction func appendDigit(sender: UIButton) {
         let digit = sender.currentTitle!
@@ -25,43 +28,29 @@ class CalculatorViewController: UIViewController
         }
     }
     
-    var operandStack = Array<Double>()
     
     @IBAction func operate(sender: UIButton) {
-        let operation = sender.currentTitle!
         if userIsInTheMiddleOfTypingANumber {
             enter()
         }
-        
-        switch operation {
-            case "×": performBinaryOperation() { $0 * $1 }
-            case "÷": performBinaryOperation() { $1 / $0 }
-            case "+": performBinaryOperation() { $0 + $1 }
-            case "−": performBinaryOperation() { $1 - $0 }
-            case "√": performUnaryOperation() { sqrt($0) }
-            default: break
-        }
-    }
-    
-    func performBinaryOperation(operation: (Double, Double) -> Double) {
-        if operandStack.count >= 2 {
-            displayValue = operation(operandStack.removeLast(), operandStack.removeLast())
-            enter()
-        }
-    }
-    
-    func performUnaryOperation(operation: Double -> Double) {
-        if operandStack.count >= 1 {
-            displayValue = operation(operandStack.removeLast())
-            enter()
+        if let operation = sender.currentTitle {
+            if let result = brain.performOperation(operation) {
+                displayValue = result
+            } else {
+                displayValue = 0
+            }
         }
     }
     
 
     @IBAction func enter() {
         userIsInTheMiddleOfTypingANumber = false
-        operandStack.append(displayValue)
-        print("operandStack = \(operandStack)")
+        if let result = brain.pushOperand(displayValue) {
+            displayValue = result
+        } else {
+            displayValue = 0
+        }
+        
     }
     
     // Computed property for appending into the stack and displaying a displayLabel
